@@ -1,28 +1,33 @@
 <template>
-    <div>
-        <el-menu theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-            <el-menu-item index="1">处理中心</el-menu-item>
-            <el-submenu index="2">
-                <template slot="title">我的工作台</template>
-                <el-menu-item index="2-1">选项1</el-menu-item>
-                <el-menu-item index="2-2">选项2</el-menu-item>
-                <el-menu-item index="2-3">选项3</el-menu-item>
-            </el-submenu>
-            <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+    <div align="center">
+        <el-menu theme="dark" default-active="1" class="el-menu-demo" router mode="horizontal" @select="handleSelect">
+            <el-menu-item index="model">模型管理</el-menu-item>
+            <el-menu-item index="rule">规则管理</el-menu-item>
+            <el-menu-item index="vari">变量管理</el-menu-item>
         </el-menu>
-        <div class="line"></div>
+        <div class="content">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 <script>
     export default{
         data (){
             return {};
+        },
+        methods: {
+            handleSelect(key, keyPath) {
+                console.log(key, keyPath);
+            }
         }
     }
 </script>
 
 <style scoped>
-    .line {
+    .content {
         background-color: aliceblue;
+    }
+    .el-menu-demo{
+
     }
 </style>

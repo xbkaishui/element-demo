@@ -31,6 +31,7 @@
     "postcss-loader": "^1.2.1",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
     "url-loader": "^0.5.7",
     "vue-loader": "^10.0.0",
     "vue-resource": "^1.2.0",
