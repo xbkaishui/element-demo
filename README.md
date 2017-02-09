@@ -50,3 +50,15 @@ npm run build
 [awesome element](https://github.com/ElementUI/awesome-element)
 
 [cooking 脚手架](https://github.com/elemefe/cooking)
+
+### 模拟测试数据 
+
+``````
+安装 [json-server](https://github.com/typicode/json-server) 
+
+npm install -g json-server
+启动server:
+json-server -p 8011 -w data.json
+http://localhost:8011/models?_start=1&_limit=10
+http://localhost:8011/models?ModId=1
+``````
