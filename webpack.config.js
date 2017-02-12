@@ -5,6 +5,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const url = require('url')
 const publicPath = ''
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = (options = {}) => ({
   entry: {
@@ -25,8 +26,10 @@ module.exports = (options = {}) => ({
       {
         test: /\.js$/,
         use: ['babel-loader'],
-        exclude: /node_modules/
-      },
+        include: [
+          resolve(__dirname, 'src')
+          // resolve(__dirname, 'node_modules/')
+        ]},
       {
         test: /\.html$/,
         use: [{
@@ -63,12 +66,13 @@ module.exports = (options = {}) => ({
     ]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest']
-    }),
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   names: ['manifest']
+    // }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+      // new UglifyJSPlugin()
   ],
   resolve: {
     alias: {

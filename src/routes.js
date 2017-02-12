@@ -3,8 +3,7 @@ import Model from './components/model/Model.vue'
 import Rule from './components/rule/Rule.vue'
 import Vari from './components/vari/Vari.vue'
 
-
-let routes = [
+const routes = [
     {
         path: '/',
         component: Home,
@@ -30,6 +29,5 @@ let routes = [
         ]
     }
 ]
-
 
 export default routes
