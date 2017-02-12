@@ -9,7 +9,8 @@ export const removeModel= params => {
     return axios.delete(`${base}/models/${id}`, { params: params }); };
 
 export const editModel= params => {
+    console.log(params);
     let id = params['id'];
-    return axios.post(`${base}/models/${id}`, { params: params }); };
+    return axios.put(`${base}/models/${id}`,  params); };
 
-export const addModel= params => { return axios.put(`${base}/models`, { params: params }); };
+export const addModel= params => { return axios.post(`${base}/models`,  params ); };

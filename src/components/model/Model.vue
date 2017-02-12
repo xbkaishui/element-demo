@@ -173,10 +173,10 @@
                                 //新增
                                 let para = {
                                     ModName: _this.editForm.ModName,
-                                    sex: _this.editForm.sex,
-                                    age: _this.editForm.age,
-                                    birth: _this.editForm.birth == '' ? '' : util.formatDate.format(new Date(_this.editForm.birth), 'yyyy-MM-dd'),
-                                    addr: _this.editForm.addr,
+                                    ModType: _this.editForm.ModType,
+                                    Status: _this.editForm.Status,
+                                    UserID: _this.editForm.UserID,
+                                    ModDesc: _this.editForm.ModDesc,
                                 };
                                 addModel(para).then((res) => {
                                     _this.editLoading = false;
@@ -192,16 +192,16 @@
                             } else {
                                 //编辑
                                 let para = {
-                                    id: _this.editForm.id,
-                                    name: _this.editForm.name,
-                                    sex: _this.editForm.sex,
-                                    age: _this.editForm.age,
-                                    birth: _this.editForm.birth == '' ? '' : util.formatDate.format(new Date(_this.editForm.birth), 'yyyy-MM-dd'),
-                                    addr: _this.editForm.addr,
+                                    id:_this.editForm.ModId,
+                                    ModId:_this.editForm.ModId,
+                                    ModName: _this.editForm.ModName,
+                                    ModType: _this.editForm.ModType,
+                                    Status: _this.editForm.Status,
+                                    UserID: _this.editForm.UserID,
+                                    ModDesc: _this.editForm.ModDesc,
                                 };
-                                editUser(para).then((res) => {
+                                editModel(para).then((res) => {
                                     _this.editLoading = false;
-                                    NProgress.done();
                                     _this.btnEditText = '提 交';
                                     _this.$notify({
                                         title: '成功',

@@ -1,74 +1,90 @@
 {
-  "models":[
+  "models": [
     {
-      "id":1,
-      "ModId":1,
-      "ModName":"指标计算模型",
-      "ModType":10,
-      "Status":1,
-      "UserID":"xxx",
-      "ModDesc":"用于计算指标的模型"
-    }
-   ,{
-      "id":2,
-      "ModId":2,
-      "ModName":"数据查询模型",
-      "ModType":90,
-      "Status":1,
-      "UserID":"xxx",
-      "ModDesc":"用于数据查询模型"
+      "id": 1,
+      "ModId": 1,
+      "ModName": "指标计算模型",
+      "ModType": 10,
+      "Status": 1,
+      "UserID": "xxx",
+      "ModDesc": "用于计算指标的模型"
     },
     {
-      "id":22,
-      "ModId":22,
-      "ModName":"数据查询模型",
-      "ModType":90,
-      "Status":1,
-      "UserID":"xxx",
-      "ModDesc":"用于数据查询模型"
+      "id": 2,
+      "ModId": 2,
+      "ModName": "数据查询模型",
+      "ModType": 90,
+      "Status": 1,
+      "UserID": "xxx",
+      "ModDesc": "用于数据查询模型"
     },
     {
-      "id":20,
-      "ModId":20,
-      "ModName":"数据查询模型",
-      "ModType":90,
-      "Status":1,
-      "UserID":"xxx",
-      "ModDesc":"用于数据查询模型"
+      "id": 22,
+      "ModId": 22,
+      "ModName": "数据查询模型",
+      "ModType": 90,
+      "Status": 1,
+      "UserID": "xxx",
+      "ModDesc": "用于数据查询模型"
+    },
+    {
+      "id": 20,
+      "ModId": 20,
+      "ModName": "数据查询模型",
+      "ModType": 90,
+      "Status": 1,
+      "UserID": "xxxss",
+      "ModDesc": "用于数据查询模型"
+    },
+    {
+      "{\n      \"id\":20,\n      \"ModId\":20,\n      \"ModName\":\"数据查询模型\",\n      \"ModType\":90,\n      \"Status\":1,\n      \"UserID\":\"xxx\",\n      \"ModDesc\":\"用于数据查询模型\"\n    }\n": "",
+      "id": 23
+    },
+    {
+      "{\n      \"id\":20,\n      \"ModId\":20,\n      \"ModName\":\"数据查询模型\",\n      \"ModType\":90,\n      \"Status\":1,\n      \"UserID\":\"xxx\",\n      \"ModDesc\":\"用于数据查询模型xxxxx\"\n    }\n": "",
+      "id": 24
+    },
+    {
+      "ModName": "xxxx",
+      "ModType": 1,
+      "Status": 1,
+      "UserID": "sss",
+      "ModDesc": "xxx",
+      "id": 25
     }
   ],
-  "rules":[
+  "rules": [
     {
-      "id":1,
+      "id": 1,
       "ModId": 0,
       "RuleID": 1,
       "RuleType": 1,
       "RuleContext": "tmp1 = Vol/ timelen(TTime);\r\ntmp2= tmp1/Vol_KD;\r\n x1='RT_10DVolRate';\r\n x2= tmp2;\r\nx3=0;",
       "Status": 1,
-      "RuleDesc":"desc"
+      "RuleDesc": "desc"
     },
     {
-      "id":2,
+      "id": 2,
       "ModId": 1,
       "RuleID": 2,
       "RuleType": 1,
       "RuleContext": "tmp1 = Vol/ timelen(TTime);\r\ntmp2= tmp1/Vol_KD;\r\n x1='RT_10DVolRate';\r\n x2= tmp2;\r\nx3=0;",
       "Status": 1,
-      "RuleDesc":"desc"
+      "RuleDesc": "desc"
     },
     {
-      "id":3,
+      "id": 3,
       "ModId": 1,
       "RuleID": 3,
       "RuleType": 1,
       "RuleContext": "tmp1 = Vol/ timelen(TTime);\r\ntmp2= tmp1/Vol_KD;\r\n x1='RT_10DVolRate';\r\n x2= tmp2;\r\nx3=0;",
       "Status": 1,
-      "RuleDesc":"desc"
+      "RuleDesc": "desc"
     }
   ],
-  "varis":[
+  "varis": [
     {
-      "id":10,
+      "id": 10,
       "VariID": 10,
       "VariCode": "Vol",
       "VariName": "总手(总成交量)",
@@ -77,10 +93,10 @@
       "VariSrc": "kafka:topic.out.TimeLine_SH,topic.out.TimeLine_SZ",
       "SrcCol": "Vol",
       "SrcColType": "INT",
-      "SrcCondition":"${34}"
+      "SrcCondition": "${34}"
     },
     {
-      "id":45,
+      "id": 45,
       "VariID": 45,
       "VariCode": "TTime",
       "VariName": "交易时间",
@@ -89,7 +105,7 @@
       "VariSrc": "kafka:topic.out.TimeLine_SH,topic.out.TimeLine_SZ",
       "SrcCol": "TTime",
       "SrcColType": "STRING",
-      "SrcCondition":"${44}"
+      "SrcCondition": "${44}"
     }
   ]
 }
