@@ -1,6 +1,7 @@
 {
   "models":[
     {
+      "id":1,
       "ModId":1,
       "ModName":"指标计算模型",
       "ModType":10,
@@ -9,7 +10,26 @@
       "ModDesc":"用于计算指标的模型"
     }
    ,{
+      "id":2,
       "ModId":2,
+      "ModName":"数据查询模型",
+      "ModType":90,
+      "Status":1,
+      "UserID":"xxx",
+      "ModDesc":"用于数据查询模型"
+    },
+    {
+      "id":22,
+      "ModId":22,
+      "ModName":"数据查询模型",
+      "ModType":90,
+      "Status":1,
+      "UserID":"xxx",
+      "ModDesc":"用于数据查询模型"
+    },
+    {
+      "id":20,
+      "ModId":20,
       "ModName":"数据查询模型",
       "ModType":90,
       "Status":1,
@@ -19,6 +39,7 @@
   ],
   "rules":[
     {
+      "id":1,
       "ModId": 0,
       "RuleID": 1,
       "RuleType": 1,
@@ -27,6 +48,7 @@
       "RuleDesc":"desc"
     },
     {
+      "id":2,
       "ModId": 1,
       "RuleID": 2,
       "RuleType": 1,
@@ -35,6 +57,7 @@
       "RuleDesc":"desc"
     },
     {
+      "id":3,
       "ModId": 1,
       "RuleID": 3,
       "RuleType": 1,
@@ -45,6 +68,7 @@
   ],
   "varis":[
     {
+      "id":10,
       "VariID": 10,
       "VariCode": "Vol",
       "VariName": "总手(总成交量)",
@@ -56,6 +80,7 @@
       "SrcCondition":"${34}"
     },
     {
+      "id":45,
       "VariID": 45,
       "VariCode": "TTime",
       "VariName": "交易时间",

@@ -51,6 +51,11 @@ npm run build
 
 [cooking 脚手架](https://github.com/elemefe/cooking)
 
+### 使用插件集合
+
+[http axios](https://github.com/mzabriskie/axios)
+
+
 ### 模拟测试数据 
 
 ``````
