@@ -35,22 +35,6 @@
       "Status": 1,
       "UserID": "xxxss",
       "ModDesc": "用于数据查询模型"
-    },
-    {
-      "{\n      \"id\":20,\n      \"ModId\":20,\n      \"ModName\":\"数据查询模型\",\n      \"ModType\":90,\n      \"Status\":1,\n      \"UserID\":\"xxx\",\n      \"ModDesc\":\"用于数据查询模型\"\n    }\n": "",
-      "id": 23
-    },
-    {
-      "{\n      \"id\":20,\n      \"ModId\":20,\n      \"ModName\":\"数据查询模型\",\n      \"ModType\":90,\n      \"Status\":1,\n      \"UserID\":\"xxx\",\n      \"ModDesc\":\"用于数据查询模型xxxxx\"\n    }\n": "",
-      "id": 24
-    },
-    {
-      "ModName": "xxxx",
-      "ModType": 1,
-      "Status": 1,
-      "UserID": "sss",
-      "ModDesc": "xxx",
-      "id": 25
     }
   ],
   "rules": [
