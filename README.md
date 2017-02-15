@@ -54,6 +54,9 @@ npm run build
 ### 使用插件集合
 
 [http axios](https://github.com/mzabriskie/axios)
+[axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter)
+[mockjs](https://github.com/nuysoft/Mock/wiki/Getting-Started)
+
 
 
 ### 模拟测试数据 
