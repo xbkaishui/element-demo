@@ -1,7 +1,7 @@
 <template>
 <section class="rulesty">
-            <div class="tool">
-            <!--工具条-->
+    <div class="tool">
+    <!--工具条-->
             <el-col :span="24" class="toolbar">
                 <el-form :inline="true" :model="filters">
                     <el-form-item>
@@ -37,7 +37,8 @@
 				<el-table-column
 				   prop ="Status"
 				   label = "状态"
-				   width="150"				   :formatter="formatter">
+				   width="150"
+				   :formatter="formatter">
 				</el-table-column>
 				<el-table-column
 				   prop ="RuleDesc"
@@ -105,7 +106,9 @@
                 rules:[],
                 filters: {
                     name: ''
-                },				ruleStatus:['无效','有效'],				filter:'',
+                },
+				ruleStatus:['无效','有效'],
+				filter:'',
                 editFormVisible:false,
                 editFormTile: '编辑',//编辑界面标题
                 //编辑界面数据
@@ -125,7 +128,10 @@
             };
 		},
 		
-		methods:{			formatter(row, column) {				let idx = parseInt(row.Status);				//console.log('idx is '+idx + this.ruleStatus[idx]);
+		methods:{
+			formatter(row, column) {
+				let idx = parseInt(row.Status);
+				//console.log('idx is '+idx + this.ruleStatus[idx]);
 				return this.ruleStatus[idx];
 			  },
 		 deleteRow(row) {
@@ -173,12 +179,21 @@
 						console.log(error);
 					})
 				},
-				searchRule(){					let param = {
+				searchRule(){
+					let param = {
 						RuleID: this.filter,
-					};					let ruleID = param['RuleID'];					console.log(ruleID);
-					searchRuleByRuleID(param).then(function (res){						console.log(res);
+					};
+					let ruleID = param['RuleID'];
+					if(!ruleID){
+                        this.getRules();
+					    return;
+                    }
+					console.log(ruleID);
+					searchRuleByRuleID(param).then(function (res){
+						console.log(res);
 						this.rules = res.data
-					}.bind(this)).catch(function (err){						alert(err);
+					}.bind(this)).catch(function (err){
+						alert(err);
 						console.log(err);
 					})
 					
