@@ -4,7 +4,7 @@ import Rule from './components/rule/Rule.vue'
 import Vari from './components/vari/Vari.vue'
 
 
-let routes = [
+var routes = [
     {
         path: '/',
         component: Home,
