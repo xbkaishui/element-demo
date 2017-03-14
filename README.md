@@ -55,6 +55,11 @@ npm run build
 
 [http axios](https://github.com/mzabriskie/axios)
 
+[axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter)
+
+[mockjs](https://github.com/nuysoft/Mock/wiki/Getting-Started)
+
+
 
 ### 模拟测试数据 
 
@@ -69,4 +74,5 @@ http://localhost:8011/models?ModId=1
 
 example: 
 http://www.betterpixels.co.uk/projects/2015/05/09/mock-up-your-rest-api-with-json-server/
+
 ``````

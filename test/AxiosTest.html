@@ -1,0 +1,26 @@
+<html>
+<header>
+    <title>test axios</title>
+</header>
+<body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<div id="content">
+    content
+</div>
+<script type="application/javascript">
+    console.log(axios)
+
+    var base = 'http://127.0.0.1:8080/api/models'
+
+    axios.get(base)
+        .then(function (response) {
+            console.log(response);
+            console.log(response.data)
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+</script>
+</body>
+</html>
