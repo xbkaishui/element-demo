@@ -40,12 +40,11 @@
   "rules": [
     {
       "id": 1,
-      "ModId": 0,
       "RuleID": 1,
-      "RuleType": 1,
       "RuleContext": "tmp1 = Vol/ timelen(TTime);\r\ntmp2= tmp1/Vol_KD;\r\n x1='RT_10DVolRate';\r\n x2= tmp2;\r\nx3=0;",
+      "RuleType": 1,
       "Status": 1,
-      "RuleDesc": "desc"
+      "RuleDesc": "desc xx"
     },
     {
       "id": 2,
@@ -73,7 +72,7 @@
       "VariCode": "Vol",
       "VariName": "总手(总成交量)",
       "VariType": 1,
-      "VariTag": 0,
+      "VariTag": "1",
       "VariSrc": "kafka:topic.out.TimeLine_SH,topic.out.TimeLine_SZ",
       "SrcCol": "Vol",
       "SrcColType": "INT",
@@ -84,12 +83,36 @@
       "VariID": 45,
       "VariCode": "TTime",
       "VariName": "交易时间",
-      "VariType": 1,
+      "VariType": "100",
       "VariTag": 0,
       "VariSrc": "kafka:topic.out.TimeLine_SH,topic.out.TimeLine_SZ",
       "SrcCol": "TTime",
       "SrcColType": "STRING",
       "SrcCondition": "${44}"
+    },
+    {
+      "VariID": "11",
+      "VariCode": "111",
+      "VariName": "11",
+      "VariType": 1,
+      "VariTag": 0,
+      "VariSrc": "11",
+      "SrcCol": "11",
+      "SrcColType": "11",
+      "SrcCondition": "11",
+      "id": 46
+    },
+    {
+      "VariID": "21",
+      "VariCode": "TDate",
+      "VariName": "日期",
+      "VariType": "3",
+      "VariTag": "mark",
+      "VariSrc": "TDate",
+      "SrcCol": "TDate",
+      "SrcColType": "string",
+      "SrcCondition": "aa",
+      "id": 47
     }
   ]
 }

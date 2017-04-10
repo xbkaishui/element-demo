@@ -22,7 +22,9 @@ export const  getRules =  params =>{
 	return axios.get(`${base}/rules`,{params:params});
 	};
 export const searchRuleByRuleID = params=>{
-	let RuleID = params['RuleID'];	console.log(RuleID);	return axios.get(`${base}/rules`,{params:params} );
+	let RuleID = params['RuleID'];
+	console.log(RuleID);
+	return axios.get(`${base}/rules`,{params:params} );
 };
 	
 export const editRule=params=>{
@@ -41,4 +43,32 @@ export const deleteRule=params=>{
 	let id = params['id'];
 	console.log(id);
 	return axios.delete(`${base}/rules/${id}`,{params:params});
+};
+
+//vari 的增删改查
+export const  getVaris =  params =>{
+	return axios.get(`${base}/varis`,{params:params});
+};
+export const searchRuleByVariID = params=>{
+	let VariID = params['VariID'];
+	console.log(VariID);
+	return axios.get(`${base}/varis`,{params:params} );
+};
+
+export const editVari=params=>{
+	let id = params['id'];
+	console.log(id);
+	return axios.put(`${base}/varis/${id}`,params);
+};
+
+export const addVari=params=>{
+	//let id = params['RuleID'];
+	return axios.post(`${base}/varis`,params);
+
+};
+
+export const deleteVari=params=>{
+	let id = params['id'];
+	console.log(id);
+	return axios.delete(`${base}/varis/${id}`,{params:params});
 };
