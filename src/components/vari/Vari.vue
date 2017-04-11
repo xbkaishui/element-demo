@@ -223,7 +223,7 @@
 				getVaris(){
 					getVaris({}).then(function (response) {
 						console.log(response);
-						this.varis = response.data
+						this.varis = response.data.varis
 					}.bind(this)).catch(function (error) {
 						console.log(error);
 					})
@@ -240,7 +240,7 @@
 					console.log(variID);
 					searchRuleByVariID(param).then(function (res){
 						console.log(res);
-						this.varis = res.data
+						this.varis = res.data.varis
 					}.bind(this)).catch(function (err){
 						alert(err);
 						console.log(err);

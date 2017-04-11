@@ -221,7 +221,7 @@
                 let self = this
                 getModels({}).then(function (response) {
                     console.log(response);
-                    self.models = response.data
+                    self.models = response.data.models;
                 }).catch(function (error) {
                     console.log(error);
                 })

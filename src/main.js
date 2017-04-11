@@ -5,14 +5,17 @@ import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import routes from './routes'
-// import VueResource from 'vue-resource';
-
+import mock  from './mock'
 
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
-// Vue.use(VueResource);
-// Vue.http.options.emulateHTTP = true;
+debugger;
+console.log(process.env);
+if (process.env.NODE_ENV !== 'production') {
+  // init mock data
+  mock.bootstrap();
+}
 
 const router = new VueRouter({
     routes

@@ -16,7 +16,7 @@
                 </el-form>
             </el-col>
             </div>
-    
+
         <el-table
 		 :data="rules"
                    border
@@ -123,11 +123,11 @@
                 editLoading: false,
                 btnEditText: '提 交',
                 editFormRules: {
-                    
+
                 }
             };
 		},
-		
+
 		methods:{
 			formatter(row, column) {
 				let idx = parseInt(row.Status);
@@ -174,7 +174,7 @@
 				getRules(){
 					getRules({}).then(function (response) {
 						console.log(response);
-						this.rules = response.data
+						this.rules = response.data.rules
 					}.bind(this)).catch(function (error) {
 						console.log(error);
 					})
@@ -185,18 +185,18 @@
 					};
 					let ruleID = param['RuleID'];
 					if(!ruleID){
-                        this.getRules();
+              this.getRules();
 					    return;
                     }
 					console.log(ruleID);
 					searchRuleByRuleID(param).then(function (res){
 						console.log(res);
-						this.rules = res.data
+						this.rules = res.data.rules
 					}.bind(this)).catch(function (err){
 						alert(err);
 						console.log(err);
 					})
-					
+
 				},
 				 editSubmit: function () {
 					var _this = this;
@@ -255,8 +255,8 @@
                 });
 
             },
-				
-			
+
+
 		},
 		mounted(){
 				this.getRules();

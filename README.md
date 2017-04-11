@@ -25,7 +25,7 @@ npm run dev
 npm run build
 ```
 
-## Useful links 
+## Useful links
 ### vue 插件列表学习 指南
 
 [buble es5 compiler](https://gitlab.com/Rich-Harris/buble)
@@ -40,7 +40,7 @@ npm run build
 
 [flow-bin A STATIC TYPE CHECKER FOR JAVASCRIPT ](https://flowtype.org/)
 
-### 饿了吗 
+### 饿了吗
 [eleAdmin 后台配置 ](https://git.oschina.net/bfgdqch/EleAdmin)
 
 [element 前端UI](http://element.eleme.io/#/zh-CN/resource)
@@ -57,22 +57,21 @@ npm run build
 
 [axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter)
 
-[mockjs](https://github.com/nuysoft/Mock/wiki/Getting-Started)
 
 
-
-### 模拟测试数据 
+### 模拟测试数据
 
 ``````
-安装 [json-server](https://github.com/typicode/json-server) 
+测试框架使用 axios-mock-adapter，本地数据mock
 
+安装 [json-server](https://github.com/typicode/json-server)
 npm install -g json-server
 启动server:
 json-server -p 8011 -w data.json
 http://localhost:8011/models?_start=1&_limit=10
-http://localhost:8011/models?ModId=1
+http://localhost:8011/models?ModId=1*/
 
-example: 
+example:
 http://www.betterpixels.co.uk/projects/2015/05/09/mock-up-your-rest-api-with-json-server/
 
 ``````
